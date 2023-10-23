@@ -64,7 +64,7 @@ const AboutSection = () => {
             ballsCocks and ballsCocks and ballsCocks and ballsCocks and
             ballsCocks and ballsCocks and ballsCocks and balls
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8 text-lg md:text-2xl">
             <TabButton
               selectTab={() => tabChangeHandler("skills")}
               active={tab === "skills"}
@@ -86,7 +86,7 @@ const AboutSection = () => {
               Experience
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-4">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
