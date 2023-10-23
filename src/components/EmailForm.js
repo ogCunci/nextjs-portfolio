@@ -1,19 +1,21 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const EmailForm = () => {
-  const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
+  const [doneSubmit, setDoneSubmit] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const submitHanlder = async (event) => {
     event.preventDefault();
+    setIsSubmitting(true);
+
     const data = {
       email: event.target.email.value,
       subject: event.target.subject.value,
       message: event.target.message.value,
     };
-    console.log("----------");
-    console.log(data);
-    console.log("----------");
 
     const response = await fetch("/api/send", {
       method: "POST",
@@ -23,9 +25,9 @@ const EmailForm = () => {
       },
     });
 
+    setIsSubmitting(false);
     if (response.ok) {
-      setIsEmailSubmitted(true);
-      console.log("Message sent");
+      setDoneSubmit(true);
     }
   };
 
@@ -78,8 +80,23 @@ const EmailForm = () => {
       >
         Send
       </button>
-      {isEmailSubmitted && (
-        <p className="text-green-500 text-sm mt-2">E-mail sent successfully!</p>
+      {isSubmitting && (
+        <TypeAnimation
+          className="mt-2 pl-1 text-sm text-white"
+          sequence={["Sending", 500, "Sending...", 1000]}
+          wrapper="span"
+          omitDeletionAnimation={true}
+          preRenderFirstString={true}
+          deletionSpeed={0}
+          speed={1}
+          cursor={false}
+          repeat={Infinity}
+        />
+      )}
+      {doneSubmit && (
+        <p className="text-green-500 text-sm mt-2 pl-1">
+          E-mail sent successfully!
+        </p>
       )}
     </form>
   );

@@ -16,9 +16,9 @@ export default function HeroSection() {
               sequence={[
                 "Cunci",
                 1000,
-                "Frontend Developer",
+                "Developer",
                 1000,
-                "The biggest cigány",
+                "React Enjoyer",
                 1000,
               ]}
               wrapper="span"
