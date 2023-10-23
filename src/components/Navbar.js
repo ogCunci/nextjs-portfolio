@@ -4,6 +4,7 @@ import NavLink from "./NavLink";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import Image from "next/image";
 
 const navLinks = [
   {
@@ -24,13 +25,18 @@ export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+    <nav className="fixed lg:ml-20 lf:mr-20 md:ml-10 md:mr-10 mr-auto top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
           className="text-2xl sm:text-5xl text-white font-semibold"
         >
-          COCK
+          <Image
+            src="/images/logo.png"
+            alt="hero-image"
+            width={64}
+            height={64}
+          />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!isNavbarOpen ? (

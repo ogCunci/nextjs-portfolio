@@ -2,18 +2,43 @@
 import Image from "next/image";
 import React, { useState, useTransition } from "react";
 import TabButton from "./TabButton";
+import {
+  ReactOriginal,
+  NextjsOriginal,
+  JavascriptOriginal,
+  JavaOriginal,
+  CsharpOriginal,
+  Html5Original,
+  Css3Original,
+} from "devicons-react";
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "Tech Stack",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>React</li>
-        <li>NextJS</li>
-        <li>JavaScript</li>
-        <li>Java</li>
-        <li>C#</li>
+      <ul className="pl-2 flex flex-row gap-5">
+        <li>
+          <ReactOriginal size={32} />
+        </li>
+        <li>
+          <NextjsOriginal size={32} />
+        </li>
+        <li>
+          <JavascriptOriginal size={32} />
+        </li>
+        <li>
+          <Html5Original size={32} />
+        </li>
+        <li>
+          <Css3Original size={32} />
+        </li>
+        <li>
+          <JavaOriginal size={32} />
+        </li>
+        <li>
+          <CsharpOriginal size={32} />
+        </li>
       </ul>
     ),
   },
@@ -37,6 +62,9 @@ const TAB_DATA = [
   },
 ];
 
+const ABOUT_TEXT =
+  "Cocks and balls Cocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and balls";
+
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
@@ -59,18 +87,15 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
           <p className="text-base lg:text-lg">
-            Cocks and balls Cocks and ballsCocks and ballsCocks and ballsCocks
-            and ballsCocks and ballsCocks and ballsCocks and ballsCocks and
-            ballsCocks and ballsCocks and ballsCocks and ballsCocks and
-            ballsCocks and ballsCocks and ballsCocks and balls
+            {ABOUT_TEXT}
           </p>
-          <div className="flex flex-row justify-start mt-8 text-lg md:text-2xl">
+          <div className="flex flex-row gap-4 justify-start mt-8 text-lg md:text-2xl">
             <TabButton
               selectTab={() => tabChangeHandler("skills")}
               active={tab === "skills"}
             >
               {" "}
-              Skills{" "}
+              Tech Stack{" "}
             </TabButton>
             <TabButton
               selectTab={() => tabChangeHandler("education")}
