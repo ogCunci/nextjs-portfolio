@@ -30,11 +30,11 @@ export default function HeroSection() {
             büdös cigányék
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#171616] via-[#163f99] to-[#00a2ff] hover:bg-slate-200 text-white">
+            <button className="px-6 py-3 w-full sm:w-fit sm:mr-4 rounded-full bg-gradient-to-br from-[#171616] via-[#163f99] to-[#00a2ff] hover:bg-slate-200 text-white max-w-xs">
               Fuck me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-[#171616] via-[#163f99] to-[#00a2ff] hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-[#171616] via-[#163f99] to-[#00a2ff] hover:bg-slate-800 text-white mt-3 max-w-xs">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 max-w-xs">
                 Download CV
               </span>
             </button>

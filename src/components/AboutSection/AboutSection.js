@@ -14,10 +14,10 @@ import {
 
 const TAB_DATA = [
   {
-    title: "Tech Stack",
+    title: "Skills",
     id: "skills",
     content: (
-      <ul className="pl-2 flex flex-row gap-5">
+      <ul className="pl-2 grid sm:grid-cols-7 sm:grid-row-1 sm:gap-y-0 grid-cols-4 grid-row-2 gap-y-3">
         <li>
           <ReactOriginal size={32} />
         </li>
@@ -79,23 +79,24 @@ const AboutSection = () => {
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
         <Image
+          className="hidden md:block"
           src="/images/hero-image.png"
           alt="about-image"
           width={500}
           height={500}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">About me</h2>
           <p className="text-base lg:text-lg">
             {ABOUT_TEXT}
           </p>
-          <div className="flex flex-row gap-4 justify-start mt-8 text-lg md:text-2xl">
+          <div className="flex flex-row gap-2 justify-start mt-6 text-base md:text-2xl">
             <TabButton
               selectTab={() => tabChangeHandler("skills")}
               active={tab === "skills"}
             >
               {" "}
-              Tech Stack{" "}
+              Skills{" "}
             </TabButton>
             <TabButton
               selectTab={() => tabChangeHandler("education")}
