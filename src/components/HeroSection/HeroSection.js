@@ -8,14 +8,14 @@ export default function HeroSection() {
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left sm:mr-4 md:mr-0 w-full">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-[1.1] font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary-950 via-primary-800 to-primary-500">
               Hey, I'm{" "}
             </span>
             <br />
             <TypeAnimation
               sequence={[
-                "Cunci",
+                "Daniel",
                 1000,
                 "Developer",
                 1000,

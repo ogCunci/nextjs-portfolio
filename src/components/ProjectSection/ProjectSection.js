@@ -36,7 +36,7 @@ const ProjectSection = () => {
   );
 
   return (
-    <Fragment>
+    <section className="lg:mt-16">
       <h2 className="text-left text-2xl md:text-3xl font-bold text-white mt-4 mb-3">
         My Projects
       </h2>
@@ -69,7 +69,7 @@ const ProjectSection = () => {
           />
         ))}
       </div>
-    </Fragment>
+    </section>
   );
 };
 
