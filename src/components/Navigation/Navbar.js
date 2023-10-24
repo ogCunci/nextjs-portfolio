@@ -8,6 +8,10 @@ import Image from "next/image";
 
 const navLinks = [
   {
+    title: "Home",
+    path: "/"
+  },
+  {
     title: "About",
     path: "#about",
   },
@@ -25,7 +29,7 @@ export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed lg:ml-20 lf:mr-20 md:ml-10 md:mr-10 mr-auto top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+    <nav className="fixed lg:px-20 md:px-10 px-5 mr-auto top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}

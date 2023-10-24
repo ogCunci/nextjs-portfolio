@@ -28,7 +28,7 @@ export default function HeroSection() {
             />
           </h1>
           <p className="text-[#adb7be] mb-6 text-base sm:text-lg lg:text-xl">
-            I'm a fresh CS graduate who's passionate about Front-end React/NexJS
+            I'm a fresh CS graduate who's dedicated about Front-end React/NexJS
             development based in Hungary.
           </p>
           <div>

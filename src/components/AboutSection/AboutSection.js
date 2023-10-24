@@ -77,44 +77,20 @@ const AboutSection = () => {
 
   return (
     <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center sm:px-4 py-8 xl:gap-16 sm:py-16">
         <Image
           className="hidden md:block"
           src="/images/hero-image.png"
           alt="about-image"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">About me</h2>
+          <h2 className="text-base lg:text-lg font-bold text-primary-500 mb-2">About me</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">A passionate Front-end Developer from Hungary</h2>
           <p className="text-base lg:text-lg">
             {ABOUT_TEXT}
           </p>
-          <div className="flex flex-row gap-2 justify-start mt-6 text-base md:text-2xl">
-            <TabButton
-              selectTab={() => tabChangeHandler("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => tabChangeHandler("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => tabChangeHandler("experience")}
-              active={tab === "experience"}
-            >
-              Experience
-            </TabButton>
-          </div>
-          <div className="mt-4">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
         </div>
       </div>
     </section>

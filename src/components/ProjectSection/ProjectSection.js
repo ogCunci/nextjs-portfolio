@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 
@@ -36,8 +36,8 @@ const ProjectSection = () => {
   );
 
   return (
-    <div>
-      <h2 className="text-left text-4xl font-bold text-white mt-4 mb-3">
+    <Fragment>
+      <h2 className="text-left text-2xl md:text-3xl font-bold text-white mt-4 mb-3">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -57,7 +57,7 @@ const ProjectSection = () => {
           isSelected={tag === "Unity"}
         />
       </div>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8 md:gap-12">
+      <div className="grid sm:grid-cols-2 gap-8 md:gap-12">
         {filteredProjects.map((project) => (
           <ProjectCard
             key={project.id}
@@ -69,7 +69,7 @@ const ProjectSection = () => {
           />
         ))}
       </div>
-    </div>
+    </Fragment>
   );
 };
 
