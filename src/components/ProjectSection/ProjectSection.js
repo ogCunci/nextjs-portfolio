@@ -16,10 +16,11 @@ const projectsData = [
   {
     id: 2,
     title: "Turn-based Game VS AI",
-    description: "My Thesis Project",
-    image: "/images/about-image.jpg",
+    description:
+      "A Unity game I made as the thesis for university degree. Players explore randomly generated levels and fight groups of enemies in a turn based combat, where the enemy is controlled by an AI model called Behaviour Tree.",
+    image: "/images/projects/game-vs-ai.png",
     tag: ["All", "Unity"],
-    gitUrl: "/",
+    gitUrl: "https://gitlab.com/ogcunci/cruel-angel-thesis",
     previewUrl: "/",
   },
 ];
@@ -36,7 +37,7 @@ const ProjectSection = () => {
   );
 
   return (
-    <section className="lg:mt-16">
+    <section className="lg:mt-16" id="projects">
       <h2 className="text-left text-2xl md:text-3xl font-bold text-white mt-4 mb-3">
         My Projects
       </h2>
