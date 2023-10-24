@@ -37,8 +37,10 @@ const TAB_DATA = (
 
 const TechStack = () => {
   return (
-    <div className="flex sm:flex-row flex-col sm:justify-start justify-center mt-6 sm:mt-8 lg:mt-0 ml-0 sm:ml-[10%]">
-      <p className="text-base sm:text-lg lg:text-xl mb-3 sm:mb-0 sm:mt-0.5 text-center">Tech Stack</p>
+    <div className="flex sm:flex-row flex-col sm:justify-start justify-center mt-6 sm:mt-8 xl:mt-0 ml-0 sm:ml-[10%]">
+      <p className="text-base font-bold sm:text-lg lg:text-xl mb-3 sm:mb-0 sm:mt-0.5 text-center">
+        Tech Stack:
+      </p>
       {TAB_DATA}
     </div>
   );

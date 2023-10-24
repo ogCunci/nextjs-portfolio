@@ -4,6 +4,10 @@ import { TypeAnimation } from "react-type-animation";
 import TechStack from "./TechStack";
 
 export default function HeroSection() {
+  const downloadCvHanlder = async (event) => {
+    await fetch("/api/download");
+  };
+
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -33,9 +37,12 @@ export default function HeroSection() {
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit sm:mr-4 rounded-full bg-gradient-to-br from-primary-950 via-primary-800 to-primary-500 hover:bg-slate-200 text-white max-w-xs">
-              Fuck me
+              Contact me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-primary-950 via-primary-800 to-primary-500 hover:bg-slate-800 text-white mt-3 max-w-xs">
+            <button
+              onClick={downloadCvHanlder}
+              className="px-1 py-1 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-primary-950 via-primary-800 to-primary-500 hover:bg-slate-800 text-white mt-3 max-w-xs"
+            >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 max-w-xs">
                 Download CV
               </span>
