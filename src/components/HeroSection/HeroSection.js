@@ -2,10 +2,13 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import TechStack from "./TechStack";
+import { useRouter } from "next/navigation";
 
 export default function HeroSection() {
+  const router = useRouter();
+
   const downloadCvHanlder = async (event) => {
-    await fetch("/api/download");
+    router.push("/api/download");
   };
 
   return (
