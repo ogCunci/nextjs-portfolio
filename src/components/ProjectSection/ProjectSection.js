@@ -6,12 +6,14 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "My React Portfolio Page",
-    image: "/images/about-image.jpg",
+    title: "Car Rental",
+    description:
+      "A car rental website serves as an online platform that enables users to access a range of services and information related to renting vehicles. The website provides an interface for searching and reserving cars.",
+    image:
+      "https://previews.dropbox.com/p/thumb/ACH7zADgOePk_pvK5aq0L63NOrCMg4EIY2WBKtrTKalmGZLg3dNH9row5h_8ffwVP9o78x92cd1_TC9hmNDBQW4icINBnJENTpaYJg8lEhFKNdwTeSnRS08VKb5Jm8bc119hVBdIPgezKT2aV73NkOzIAQ0uGM5mgP991aYjVOy_3HfOs3THvGtT_77qm9Wv7TeGYowUntNFqM4GUPE-PAR33GomBvKK3WrCgd4693PVytoHI3jN1WUHTINXDoCDuck4r53v41zpWCe7TNmElg9SRPafyIFA6g21tnC-be6J5jViD5XA42XghInDVG_mubFK1PBB996FuW_ZAYWy-8_v/p.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ogCunci/car-rental",
+    previewUrl: "https://cunci-car-rental.vercel.app/?limit=10",
   },
   {
     id: 2,
