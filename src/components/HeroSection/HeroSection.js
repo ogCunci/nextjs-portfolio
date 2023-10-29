@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 export default function HeroSection() {
   const router = useRouter();
 
-  const downloadCvHanlder = async (event) => {
+  const handleDownloadCv = () => {
     router.push("/api/download");
   };
 
@@ -43,7 +43,7 @@ export default function HeroSection() {
               Contact me
             </button>
             <button
-              onClick={downloadCvHanlder}
+              onClick={handleDownloadCv}
               className="px-1 py-1 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-primary-950 via-primary-800 to-primary-500 hover:bg-slate-800 text-white mt-3 max-w-xs"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 max-w-xs">
