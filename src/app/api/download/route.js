@@ -1,7 +1,7 @@
 export async function GET() {
   const FILE_NAME = "BolykyTamasDaniel_CV_EN.pdf";
   const FILE_URL =
-    "https://cdn.discordapp.com/attachments/648573682368643072/1168182417815773225/BolykyTamasDaniel_CV_EN.pdf?ex=6550d5a8&is=653e60a8&hm=d8193a2a149cf85ba521bf8fcf1b2857ef34ccd4f324994791f40cbd01a2ac17&";
+    "https://cdn.discordapp.com/attachments/967048761253695609/1170072332996444300/BolykyTamasDaniel_CV_EN.pdf?ex=6557b5c7&is=654540c7&hm=bd3fcbaf3462e2870c348d1b280320b6464d3b1f7fa53ec9730840e733244e81&";
 
   const response = await fetch(FILE_URL);
 
