@@ -63,7 +63,7 @@ const TAB_DATA = [
 ];
 
 const ABOUT_TEXT =
-  "Cocks and balls Cocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and ballsCocks and balls";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum metus ac libero facilisis, a viverra lectus sagittis. Nunc congue, lacus a convallis scelerisque, dolor velit aliquam massa, eget pretium nisi ligula vel sapien. Nulla ut mattis quam. Morbi quis felis eget mauris interdum posuere eu ut lectus. Pellentesque et est ipsum. Cras sit amet fermentum magna, quis ornare arcu. Curabitur ornare elit risus, in tempor magna mattis rutrum. Suspendisse potenti. Etiam at quam finibus, rutrum augue at, aliquet diam. Ut gravida in augue ornare elementum. Curabitur venenatis tellus nulla, ac eleifend ante lacinia vitae.";
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -86,11 +86,13 @@ const AboutSection = () => {
           height={400}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-base lg:text-lg font-bold text-primary-500 mb-2">About me</h2>
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">A passionate Front-end Developer from Hungary</h2>
-          <p className="text-base lg:text-lg">
-            {ABOUT_TEXT}
-          </p>
+          <h2 className="text-base lg:text-lg font-bold text-primary-500 mb-2">
+            About me
+          </h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            A passionate Front-end Developer from Hungary
+          </h2>
+          <p className="text-base lg:text-lg">{ABOUT_TEXT}</p>
         </div>
       </div>
     </section>
