@@ -11,6 +11,10 @@ export default function HeroSection() {
     router.push("/api/download");
   };
 
+  const handleContactMe = () => {
+    window.location = "mailto:bolykydani@gmail.com";
+  };
+
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -39,10 +43,14 @@ export default function HeroSection() {
             development based in Hungary.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit sm:mr-4 rounded-full bg-gradient-to-br from-primary-950 via-primary-800 to-primary-500 hover:bg-slate-200 text-white max-w-xs">
+            <button
+              onClick={handleContactMe}
+              className="px-6 py-3 w-full sm:w-fit sm:mr-4 rounded-full bg-gradient-to-br from-primary-950 via-primary-800 to-primary-500 hover:bg-slate-200 text-white max-w-xs"
+            >
               Contact me
             </button>
             <button
+              type="button"
               onClick={handleDownloadCv}
               className="px-1 py-1 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-primary-950 via-primary-800 to-primary-500 hover:bg-slate-800 text-white mt-3 max-w-xs"
             >

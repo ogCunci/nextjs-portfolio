@@ -10,13 +10,23 @@ const projectsData = [
     description:
       "A car rental website serves as an online platform that enables users to access a range of services and information related to renting vehicles. The website provides an interface for searching and reserving cars.",
     image:
-      "https://previews.dropbox.com/p/thumb/ACH7zADgOePk_pvK5aq0L63NOrCMg4EIY2WBKtrTKalmGZLg3dNH9row5h_8ffwVP9o78x92cd1_TC9hmNDBQW4icINBnJENTpaYJg8lEhFKNdwTeSnRS08VKb5Jm8bc119hVBdIPgezKT2aV73NkOzIAQ0uGM5mgP991aYjVOy_3HfOs3THvGtT_77qm9Wv7TeGYowUntNFqM4GUPE-PAR33GomBvKK3WrCgd4693PVytoHI3jN1WUHTINXDoCDuck4r53v41zpWCe7TNmElg9SRPafyIFA6g21tnC-be6J5jViD5XA42XghInDVG_mubFK1PBB996FuW_ZAYWy-8_v/p.png",
+      "/images/projects/car-rental.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ogCunci/car-rental",
     previewUrl: "https://cunci-car-rental.vercel.app/?limit=10",
   },
   {
     id: 2,
+    title: "Social Media App",
+    description:
+      "(Work in progress) The website provides a social media app platform, where users can upload their pictures. They can also scroll through or search different posts which they can like and save.",
+    image: "/images/projects/social-media-app.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ogCunci/nerdbook",
+    previewUrl: "https://nerdbook.vercel.app",
+  },
+  {
+    id: 3,
     title: "Turn-based Game VS AI",
     description:
       "A Unity game I made as the thesis for university degree. Players explore randomly generated levels and fight groups of enemies in a turn based combat, where the enemy is controlled by an AI model called Behaviour Tree.",

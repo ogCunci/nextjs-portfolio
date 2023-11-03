@@ -1,9 +1,8 @@
-const FILE_NAME = "BolykyTamasDaniel_CV_EN.pdf";
-const FILE_URL =
-  "https://drive.usercontent.google.com/download?id=1IR4M_YhjBDdO2b-gJ_zeWbTkhgPx8NpX&export=download&authuser=0&confirm=t";
-
 export async function GET() {
-  // use fetch to get a response
+  const FILE_NAME = "BolykyTamasDaniel_CV_EN.pdf";
+  const FILE_URL =
+    "https://cdn.discordapp.com/attachments/648573682368643072/1168182417815773225/BolykyTamasDaniel_CV_EN.pdf?ex=6550d5a8&is=653e60a8&hm=d8193a2a149cf85ba521bf8fcf1b2857ef34ccd4f324994791f40cbd01a2ac17&";
+
   const response = await fetch(FILE_URL);
 
   // return a new response but use 'content-disposition' to suggest saving the file to the user's computer
