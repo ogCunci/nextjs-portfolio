@@ -63,7 +63,7 @@ const TAB_DATA = [
 ];
 
 const ABOUT_TEXT =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum metus ac libero facilisis, a viverra lectus sagittis. Nunc congue, lacus a convallis scelerisque, dolor velit aliquam massa, eget pretium nisi ligula vel sapien. Nulla ut mattis quam. Morbi quis felis eget mauris interdum posuere eu ut lectus. Pellentesque et est ipsum. Cras sit amet fermentum magna, quis ornare arcu. Curabitur ornare elit risus, in tempor magna mattis rutrum. Suspendisse potenti. Etiam at quam finibus, rutrum augue at, aliquet diam. Ut gravida in augue ornare elementum. Curabitur venenatis tellus nulla, ac eleifend ante lacinia vitae.";
+  "As a recent graudate with solid foundations, I've started diving deeper into front-end development which led me to explore the world of React and Next.js, combined with the flexibility of Tailwind CSS. My primary focus is on building responsive websites that provide a superior user experience. I'm also a teamplayer who belives in the power of teamwork and communication to deliver exceptional results. I am excited to take on new challenges, contribute my skills, and be a part of innovative projects that make a positive impact on the digital world.";
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -77,22 +77,22 @@ const AboutSection = () => {
 
   return (
     <section className="text-white lg:mt-28" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center sm:px-4 py-8 xl:gap-16 sm:py-16">
+      <div className="flex md:flex-col lg:flex-row gap-2 items-center py-8 sm:py-16">
         <Image
-          className="hidden md:block"
-          src="/images/hero-image.png"
+          className="hidden md:block md:justify-center"
+          src="/images/about-image.jpg"
           alt="about-image"
           width={400}
           height={400}
         />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full md:px-4 lg:px-8">
           <h2 className="text-base lg:text-lg font-bold text-primary-500 mb-2">
             About me
           </h2>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             A passionate Front-end Developer from Hungary
           </h2>
-          <p className="text-base lg:text-lg">{ABOUT_TEXT}</p>
+          <p className="text-base">{ABOUT_TEXT}</p>
         </div>
       </div>
     </section>
