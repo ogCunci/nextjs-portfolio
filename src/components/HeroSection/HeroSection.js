@@ -60,13 +60,13 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0 rounded-full bg-[#181818] w-[250px] h-[250px] xl:w-[400px] xl:h-[400px] relative">
+        <div className="col-span-5 place-self-center mt-4 lg:mt-0 rounded-full bg-[#f9f5f2] w-[250px] h-[250px] xl:w-[400px] xl:h-[400px] relative">
           <Image
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            src="/images/hero-image.png"
+            className="w-full h-full object-cover rounded-[50%]"
+            src="/images/hero-image.jpg"
             alt="hero-image"
-            width={300}
-            height={300}
+            width={400}
+            height={400}
           />
         </div>
       </div>
